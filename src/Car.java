@@ -28,7 +28,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car myCar = new Car("Toyota", "Camry", 2023, "Red");
+        Car myCar = new Car("Lamborghini", "Urus", 2021, "Black");
 
         System.out.println("Merk: " + myCar.getBrand());
         System.out.println("Model: " + myCar.getModel());
