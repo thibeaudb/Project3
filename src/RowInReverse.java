@@ -13,7 +13,7 @@ public class RowInReverse {
         for (int i = 0; i < 10; i++) {
             numbers[i] = scanner.nextInt();
         }
-        for (int i = 10; i >= 0; i--) {
+        for (int i = 9; i >= 0; i--) {
             System.out.println(numbers[i]);
         }
     }
