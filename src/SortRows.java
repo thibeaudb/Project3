@@ -1,26 +1,14 @@
+import java.util.Arrays;
+import java.util.Scanner;
 public class SortRows {
     public static void main(String[] args) {
-        int[] numbers = {5, 3, 10, 1, 9, 7, 4, 2, 8, 6};
-        System.out.println("Normale volgorde: ");
-        System.out.print(numbers);
-
-        sortrows(numbers);
-
-        System.out.println("Gesorteerde volgorde: ");
-        System.out.println(numbers);
-    }
-    static void sortrows(int[] array) {
-        int rowLength = array.length;
-        int lowestNumber = 200;
-        int lowestNumberIndex = 0;
-        for (int i = 0; i < rowLength; i++) {
-            if (lowestNumber > array[i]) {
-                lowestNumber = array[i];
-                lowestNumberIndex = i;
-
-            }
+        Scanner scanner = new Scanner(System.in);
+        int[] r = new int[10];
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Geef het Getal " + (i + 1) + " in : ");
+            r[i] = scanner.nextInt();
         }
-        array[lowestNumberIndex] = array[0];
-        array[0] = lowestNumber;
+        Arrays.sort(r);
+        System.out.println(Arrays.toString(r));
     }
 }
